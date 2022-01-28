@@ -18,6 +18,17 @@ export default function App() {
         Settings: 'settings',
       },
     },
+    getStateFromPath: path => {
+      if ('settings' === path) {
+        return {
+          routes: [{name: 'Home'}, {name: 'Settings'}],
+        };
+      }
+
+      return {
+        routes: [{name: 'Home'}]
+      }
+    }
   };
 
   return (
