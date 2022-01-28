@@ -2,6 +2,7 @@
   "expo": {
     "name": "poc-expo-deep-linking",
     "slug": "poc-expo-deep-linking",
+    "scheme": "myapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
