@@ -1,9 +1,13 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Button} from 'react-native';
 
-const HomeScreen = () => (
+const HomeScreen = ({navigation}) => (
   <View style={styles.container}>
     <Text>HomeScreen</Text>
+    <Button
+      title="Go to Settings"
+      onPress={() => navigation.navigate('Settings')}
+    />
   </View>
 );
 
